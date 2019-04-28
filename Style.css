@@ -1,0 +1,65 @@
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+head {
+	background-color: #EDEDED;
+	background: #EDEDED;
+	color: #EDEDED;
+}
+
+body {
+	background-color: #EDEDED;
+	background: #EDEDED;
+	color: #EDEDED;
+}
+
+
+
+div.Floor#Platform {
+	top: -15%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+
+	margin: auto;
+	padding: auto;
+
+	width: 555px;
+	height: 555px;
+
+	display: grid;
+
+	position: absolute;
+
+	box-shadow: 25px 25px 25px #DEDEDE,  33px 33px 33px #EDEDED;
+
+	grid-template-areas: 20% 20% 20% 20% 20%;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+
+	transform: perspective(1500px) rotateX(45deg) rotateY(0deg) rotateZ(45deg);
+
+	background-color: #EDEDED;
+	background: #EDEDED;
+	color: #EDEDED;
+
+	z-index: -100;
+}
+
+div#Tile {
+	cursor: auto;
+	border: solid #DEDEDE 1px;
+	background-color: url('Medias/Images/Tiles.png');
+	background: url('Medias/Images/Tiles.png');
+	color: url('Medias/Images/Tiles.png');
+	background-size: 100%;
+}
+
+div#Tile:hover {
+	cursor: pointer;
+	border: solid #CCCCCC 1px;
+	background-color: #DEDEDE;
+	background: #DEDEDE;
+	color: #DEDEDE;
+}
